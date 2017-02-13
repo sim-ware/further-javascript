@@ -1,8 +1,13 @@
-(function Note() {
+(function(exports) {
 
-Note.prototype.read = function(string) {
-  this._text = string
+  var Note = function(string) {
+    this._text = string;
+  }
+
+  Note.prototype.read = function() {
   return this._text;
-  };
+  }
+
+  exports.Note = Note;
 
 })(this);
