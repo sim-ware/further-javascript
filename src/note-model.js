@@ -1,11 +1,11 @@
 (function(exports) {
 
   var Note = function(string) {
-    this._text = string;
+    this.text = string;
   }
 
   Note.prototype.read = function() {
-  return this._text;
+  return this.text;
   }
 
   exports.Note = Note;
