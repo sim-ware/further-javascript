@@ -4,12 +4,12 @@
     this.NoteList = noteList
   }
 
-  NoteListView.prototype.returnHtml = function() {
-    str = '<ul>'
-    for each (var note in noteList.list){
-    str+= '<li><div>' + note + '</div></li>'
-    }
-    return str + '</ul'>
-  }
+  NoteListView.prototype.returnHTML = function() {
+  var listItems = ''
+  this.noteList.notes.forEach(function(i) {
+    listItems += '<li><div>' + i.content() + '</div></li>'
+  })
+  return '<ul>' + listItems + '</ul>';
+};
 
 })(this);
