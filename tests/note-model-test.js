@@ -1,10 +1,12 @@
-var note = require("note-model")
+// var note = require("src/note-model.js")
 
 function testReturnsInstantiatedString() {
-  var note = new Note('Why is Ben always lying?');
+  var note = new Note('Hey Javascript');
 
-  if (note.read() !== 'Why is Ben always lying?') {
-    throw new Error("You F*cked up.");
+  if (note.read() !== 'Hey Javascript') {
+    throw new Error("You messed up.");
+  } else {
+    console.log('No problem.')
   }
 };
 
