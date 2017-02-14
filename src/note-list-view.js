@@ -5,11 +5,11 @@
   }
 
   NoteListView.prototype.returnHtml = function() {
-    var listItems = ''
+    var listItems = '<ul>'
       this.NoteList.reallist.forEach(function(i) {
       listItems += '<li><div>' + i.read() + '</div></li>'
     })
-  return '<ul>' + listItems + '</ul>';
+  return listItems + '</ul>';
 };
 
 exports.NoteListView = NoteListView;
