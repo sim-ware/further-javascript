@@ -6,6 +6,20 @@ function testReturnsInstantiatedString() {
   } else {
     console.log('Note Model Works.')
   }
+
 };
 
 testReturnsInstantiatedString();
+
+function testNoteHasUniqueId() {
+  var note = new Note('zero')
+  var note1 = new Note('one')
+
+  if (note.id() === 0 && note1.id() === 1) {
+    console.log('unique ids for every note')
+  } else {
+    console.log('ids invalid')
+  }
+}
+
+testNoteHasUniqueId();

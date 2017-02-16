@@ -1,4 +1,3 @@
-
 (function(exports) {
   var id = 0
   var Note = function(string) {
