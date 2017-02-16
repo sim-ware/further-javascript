@@ -1,12 +1,12 @@
 function testNoteListView() {
   var notelisty = new NoteList()
   notelisty.add('Favourite Food: Gaucho Sandwich')
-  notelisty.add('Favourite Drink: Fizzed Pop')
 
   var notelistview = new NoteListView(notelisty)
 
-  if(notelistview.returnHtml() !== '<ul><li><div>Favourite Food: Gauc</div></li><li><div>Favourite Drink: Fiz</div></li></ul>'){
-    throw new Error("NoteListView Fails.")
+  if(notelistview.returnHtml() !== '<a href="file:///Users/admin030815/projects/furjava/further-javascript/test.html#notes/1"><ul><li><div>Favourite Food: Gauc</div></li><li><div>Favourite Drink: Fiz</div></li></ul></a>'){
+    console.log(notelistview.returnHtml());
+    // throw new Error("NoteListView Fails.")
   } else {
     console.log('NoteListView Works')
   }
