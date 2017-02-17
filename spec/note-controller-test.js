@@ -20,8 +20,7 @@ function testGetsHTML() {
     return {};
   };
     notecontroller.getsHTML(notelistview);
-    console.log(notecontroller.element.innerHTML)
-    if (notecontroller.element.innerHTML === '<ul><li><div>Favourite Food: Pest</div></li></ul>'){
+    if (notecontroller.element.innerHTML === '<ul><a href=#notes/3><li><div>Favourite Food: Pest</div></li></a></ul>'){
       console.log('Test GetsHTML passes')
     } else {
       throw new Error("Test GetsHTML fails")

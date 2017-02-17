@@ -4,9 +4,8 @@ function testNoteListView() {
 
   var notelistview = new NoteListView(notelisty)
 
-  if(notelistview.returnHtml() !== '<a href="file:///Users/admin030815/projects/furjava/further-javascript/test.html#notes/1"><ul><li><div>Favourite Food: Gauc</div></li><li><div>Favourite Drink: Fiz</div></li></ul></a>'){
-    console.log(notelistview.returnHtml());
-    // throw new Error("NoteListView Fails.")
+  if(notelistview.returnHtml() !== '<ul><a href=#notes/2><li><div>Favourite Food: Gauc</div></li></a></ul>'){
+    throw new Error("NoteListView Fails.")
   } else {
     console.log('NoteListView Works')
   }

@@ -8,7 +8,7 @@
     var listItems = '<ul>'
       this.NoteList.reallist.forEach(function(i) {
       listItems += '<a href='
-      listItems += window.location;
+      // listItems += window.location;
       listItems += '#notes/'
       listItems += i.id()
       listItems += '>'
